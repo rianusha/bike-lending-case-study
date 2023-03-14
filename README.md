@@ -21,7 +21,7 @@ You are required to model the demand for shared bikes with the available indepen
 
 There are 9 steps that has been done in order to arrive at model, to validate and verify. A brief explanation of the various steps are as below:
 
-1. Reading and understanding the data set
+<b>1. Reading and understanding the data set</b>
 
 The data set was analysed and basic data checks like the columns, count of rows, data types etc were done to understand the data in depth.
 The data along with given characteristics was analysed for null, redundant and unnecessary columns and those were removed from the dataset.
@@ -51,37 +51,37 @@ day.csv have the following fields:
 	- registered: count of registered users
 	- cnt: count of total rental bikes including both casual and registered
 
-2. Visualizing the data set
+<b>2. Visualizing the data set</b>
 
 The data set was visualised using scatter and box plots for numerical and categorical values. The outliers data was analysed.
 We can also check for any patterns in the charts . Coefficients between all variables are plotted to verify if any variables are closely related to any other.
 
-Step 3: Data Preparation
+<b>Step 3: Data Preparation</b>
 
 We had to change few columns that were categorical but had numerical values like weather sit, season etc.
 We modified these columns values into labels and also created them as dummy variables. After creating the dummy variables,
  we deleted the previous ones.
 
-Step 4: Splitting the Data into Training and Testing Sets
+<b>Step 4: Splitting the Data into Training and Testing Sets</b>
 
 Using sklearn.model_selection library, we split the datasets into training and test data sets in the ratio of 70-30 respectively .
 The feature scaling is also done as part of the splitting data set.
 
-Step 5: Building a linear model
+<b>Step 5: Building a linear model</b>
 
 After cleaning and creating the datasets, the model building is done as part of this step using the stats model.
 We train the model, verify the R squared and VIF values to see if the model has the best fit. If not, we remove the insignificant variables and then retrain the model.
 The process is repeated multiple times till we arrive at the best fit model.
 
-Step 6: Residual Analysis of the train data
+<b>Step 6: Residual Analysis of the train data</b>
 
 Once the data is trained, we analyse the residuals and validate if it is normally distributed. Since for a linear regression, it is crucial to have the residuals normally distributed.
 
-Step 8: Making Predictions Using the Final Model
+<b>Step 7: Making Predictions Using the Final Model</b>
 
 Now that we have fitted the model and checked the normality of error terms, it's time to go ahead and make predictions using best fit model.
 
-Step 9: Evaluating the Model
+<b>Step 8: Evaluating the Model</b>
 
 The test and predicted values using the model is plotted to check how the model has worked with the test data. We also evaluate the R-squared for train data and
 R-squared for test data if they are similar.
