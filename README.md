@@ -1,13 +1,10 @@
-Problem Statement
+<b>Problem Statement</b>
 
 A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
-
 A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
 
-
 In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
-
 
 They have contracted a consulting company to understand the factors on which the demand for these shared bikes depends. Specifically, they want to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
 
@@ -16,21 +13,21 @@ How well those variables describe the bike demands
 Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors.
 
 
-Business Goal:
+<b>Business Goal:</b>
+
 You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
 
-Approach to Problem Solving
+<b>Approach to Problem Solving</b>
 
 There are 9 steps that has been done in order to arrive at model, to validate and verify. A brief explanation of the various steps are as below:
-1.Reading and understanding the data set
+
+1. Reading and understanding the data set
 
 The data set was analysed and basic data checks like the columns, count of rows, data types etc were done to understand the data in depth.
 The data along with given characteristics was analysed for null, redundant and unnecessary columns and those were removed from the dataset.
 
-
-=========================================
 Summary of the Dataset characteristics
-=========================================
+
 day.csv have the following fields:
 
 	- instant: record index
@@ -76,11 +73,9 @@ After cleaning and creating the datasets, the model building is done as part of 
 We train the model, verify the R squared and VIF values to see if the model has the best fit. If not, we remove the insignificant variables and then retrain the model.
 The process is repeated multiple times till we arrive at the best fit model.
 
-
 Step 6: Residual Analysis of the train data
 
 Once the data is trained, we analyse the residuals and validate if it is normally distributed. Since for a linear regression, it is crucial to have the residuals normally distributed.
-
 
 Step 8: Making Predictions Using the Final Model
 
